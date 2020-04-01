@@ -1,0 +1,44 @@
+//Pedro Lucas e Matheus Rauber
+
+<?php
+	class Animal {
+	  public $nome;
+	  public $idade;
+	  public $som;
+	  public $acao;
+	}
+	class Cachorro extends Animal {
+	public  function Cachorro ($nom, $id, $sm) {
+	    $this-> nome = $nom;
+	    $this-> idade = $id;
+	    $this-> som = $sm;
+	    $this-> acao = "correr";
+	
+	  }
+	}
+	Class Cavalo extends Animal {
+	   public function Cavalo ($nom, $id, $sm) {
+	    $this-> nome = $nom;
+	    $this-> idade = $id;
+	    $this-> som = $sm;
+	    $this-> acao = "correr";
+	
+	  }
+	}
+	Class Preguica extends Animal {
+	  public function Preguica ($nom, $id, $sm) {
+	    $this-> nome = $nom;
+	    $this-> idade = $id;
+	    $this-> som = $sm;
+	    $this-> acao = "subir em arvore";
+	  }
+	}
+  $cac= new Cachorro ("Ducky", "7 anos", "latir");
+  $cav= new Cavalo ("Serena", "4 anos", "relinchar");
+  $pre= new Preguica ("Mutley", "9 anos", "balir");
+  
+ print_r($cac);
+ print_r($cav);
+ print_r($pre);
+
+	?>
